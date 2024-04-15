@@ -40,7 +40,6 @@ next-env.d.ts
 ### yarn ###
 # yarn berry
 # Zero Install
-.pnp.*
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -48,3 +47,4 @@ next-env.d.ts
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
