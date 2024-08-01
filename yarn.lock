@@ -2072,38 +2072,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cook@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "cook@workspace:."
-  dependencies:
-    "@fullcalendar/core": "npm:^6.1.15"
-    "@fullcalendar/daygrid": "npm:^6.1.15"
-    "@fullcalendar/interaction": "npm:^6.1.15"
-    "@fullcalendar/react": "npm:^6.1.15"
-    "@fullcalendar/resource": "npm:^6.1.15"
-    "@fullcalendar/resource-timeline": "npm:^6.1.15"
-    "@fullcalendar/timegrid": "npm:^6.1.15"
-    "@tiptap/extension-image": "npm:^2.3.0"
-    "@tiptap/extension-placeholder": "npm:^2.3.0"
-    "@tiptap/pm": "npm:^2.3.0"
-    "@tiptap/react": "npm:^2.3.0"
-    "@tiptap/starter-kit": "npm:^2.3.0"
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
-    "@vanilla-extract/css": "npm:^1.14.2"
-    "@vanilla-extract/next-plugin": "npm:^2.4.0"
-    eslint: "npm:^8"
-    eslint-config-next: "npm:14.1.4"
-    eslint-config-prettier: "npm:^9.1.0"
-    next: "npm:14.1.4"
-    prettier: "npm:^3.2.5"
-    react: "npm:^18"
-    react-dom: "npm:^18"
-    typescript: "npm:^5.4.5"
-  languageName: unknown
-  linkType: soft
-
 "crelt@npm:^1.0.0":
   version: 1.0.6
   resolution: "crelt@npm:1.0.6"
@@ -2255,6 +2223,38 @@ __metadata:
   checksum: 10/6ff05a7561f33603df87c45e389c9ac0a95e3c056be3da1a0c4702149e3a7f6fe5ffbb294478687ba51a9e95f3a60e8b6b9005993acd79c292c7d15f71964b6b
   languageName: node
   linkType: hard
+
+"diet@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "diet@workspace:."
+  dependencies:
+    "@fullcalendar/core": "npm:^6.1.15"
+    "@fullcalendar/daygrid": "npm:^6.1.15"
+    "@fullcalendar/interaction": "npm:^6.1.15"
+    "@fullcalendar/react": "npm:^6.1.15"
+    "@fullcalendar/resource": "npm:^6.1.15"
+    "@fullcalendar/resource-timeline": "npm:^6.1.15"
+    "@fullcalendar/timegrid": "npm:^6.1.15"
+    "@tiptap/extension-image": "npm:^2.3.0"
+    "@tiptap/extension-placeholder": "npm:^2.3.0"
+    "@tiptap/pm": "npm:^2.3.0"
+    "@tiptap/react": "npm:^2.3.0"
+    "@tiptap/starter-kit": "npm:^2.3.0"
+    "@types/node": "npm:^20"
+    "@types/react": "npm:^18"
+    "@types/react-dom": "npm:^18"
+    "@vanilla-extract/css": "npm:^1.14.2"
+    "@vanilla-extract/next-plugin": "npm:^2.4.0"
+    eslint: "npm:^8"
+    eslint-config-next: "npm:14.1.4"
+    eslint-config-prettier: "npm:^9.1.0"
+    next: "npm:14.1.4"
+    prettier: "npm:^3.2.5"
+    react: "npm:^18"
+    react-dom: "npm:^18"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
 
 "dir-glob@npm:^3.0.1":
   version: 3.0.1
