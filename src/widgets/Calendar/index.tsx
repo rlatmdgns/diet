@@ -5,8 +5,10 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
+import Cookies from 'js-cookie'
 
 const Calendar = async () => {
+  const token = Cookies.get('Authorization')
   const plugin = [
     dayGridPlugin, // 월간 달력 // day 그리드
     timeGridPlugin, // 주간, 일간 달력 // time 그리드 보기
@@ -21,11 +23,10 @@ const Calendar = async () => {
   ]
   const result = await fetch('https://api.rumor-lab.com/diets', {
     method: 'GET',
-    headers: {
-      credentials: 'include',
-    },
+    'Content-Type': 'application/json',
+    credentials: 'include',
+    Cookie: `Authorization=${token}`,
   })
-  console.log(result.json())
   return (
     <FullCalendar
       locale={'ko'} // 한국어
