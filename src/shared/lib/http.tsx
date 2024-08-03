@@ -1,10 +1,10 @@
-import returnFetch from 'return-fetch'
-
 const baseUrl = process.env.NEXT_PUBLIC_DEV_HOST
 
-export const fetchExtended = returnFetch({
+export const fetchExtended = fetch({
   baseUrl,
   headers: {
-    Accept: 'application/json',
+    'Content-Type': 'application/json',
+    accept: 'application/json',
+    credentials: 'include',
   },
 })

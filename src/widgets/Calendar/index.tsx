@@ -5,13 +5,8 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { fetchExtended } from '@/src/shared/lib/http'
 
 const Calendar = async () => {
-  const result = await fetchExtended('/diets', {
-    method: 'GET',
-  })
-  console.log(result, 'result')
   const plugin = [
     dayGridPlugin, // 월간 달력 // day 그리드
     timeGridPlugin, // 주간, 일간 달력 // time 그리드 보기
@@ -24,7 +19,14 @@ const Calendar = async () => {
     일정 클릭 이벤트
     */
   ]
-
+  const result = await fetch('https://api.rumor-lab.com/diets', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      credentials: 'include',
+    },
+  })
+  console.log(result.json())
   return (
     <FullCalendar
       locale={'ko'} // 한국어
