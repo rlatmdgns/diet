@@ -22,7 +22,6 @@ const Calendar = async () => {
   const result = await fetch('https://api.rumor-lab.com/diets', {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
       credentials: 'include',
     },
   })
